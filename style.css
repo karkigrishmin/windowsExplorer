@@ -15,6 +15,11 @@
 .py-3 {
   padding-left: 1.5rem;
 }
+.py-menu {
+  text-align: center;
+  display: inline-block;
+  margin-right: 2rem;
+}
 .py-bottom {
   padding-bottom: 0.3rem;
 }
@@ -243,4 +248,33 @@ li {
 /* img date */
 .img-date {
   padding-top: 1.3rem;
+}
+
+/* hover */
+.hover-links:hover {
+  color: #1eb2ef;
+  /* background: #fff; */
+}
+
+img:hover {
+  border: 2px solid #1eb2ef;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.opened-links:hover {
+  color: #1f45fc;
+}
+.border-blue:hover {
+  border-bottom: 3px solid #1f45fc;
+}
+.border-blue-bottom:hover {
+  border-bottom: 3px solid #1eb2ef;
+}
+.img-opened:hover {
+  border: 2px solid #1f45fc;
+}
+
+.shoe-para:hover {
+  color: #1eb2ef;
+  cursor: pointer;
 }
