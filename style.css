@@ -65,6 +65,10 @@ a {
 li {
   list-style: none;
 }
+.updated-item {
+  display: grid;
+  grid-template-rows: 8vh 28vh;
+}
 
 .icon-light {
   color: #fff;
@@ -95,7 +99,7 @@ li {
 .collection-item {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 8vh 8vh 8vh 5vh 26vh 8vh 28vh;
+  grid-template-rows: 8vh 8vh 8vh 5vh 26vh 28vh;
 }
 .flex-1 {
   display: flex;
@@ -104,6 +108,7 @@ li {
 .flex-1 p {
   color: #f7f5f9;
 }
+
 .list-item {
   padding-left: 1rem;
 }
