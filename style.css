@@ -312,4 +312,9 @@ img:hover {
   cursor: pointer;
 }
 
-/* margin for storage info */
+/* for js */
+
+.collection-2,
+.collection-3 {
+  display: none;
+}
