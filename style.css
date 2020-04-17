@@ -53,7 +53,6 @@
   margin-left: 1rem;
 }
 body {
-  background: url("./texture-1157190_1920.jpg") no-repeat center;
   font-family: "Catamaran", sans-serif;
   line-height: 1.4;
 }
@@ -77,17 +76,17 @@ li {
   color: #98999b;
 }
 .wrapper {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000px;
-  height: 100%;
-  /* height: 90vh; */
-  margin: 0 auto;
+  transform: translate(-50%, -50%); */
+  width: 100vw;
+  height: 100vh;
+
+  /* margin: 0 auto; */
   background: #fff;
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 20% 80%;
 }
 /* side menu */
 .sidebar {
@@ -99,7 +98,7 @@ li {
 .collection-item {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 8vh 8vh 8vh 6vh 6vh 6vh 6vh 8vh 8vh 29vh;
+  grid-template-rows: 8vh 5vh 5vh 6vh 5vh 5vh 6vh 5vh 5vh 5vh 5vh 6vh 6vh 18vh;
 }
 .flex-1 {
   display: flex;
@@ -193,19 +192,23 @@ li {
 /* img grid */
 .img-grid {
   display: grid;
+
   grid-template-columns: 50% 50%;
   grid-template-rows: repeat(4, 15vh);
   grid-gap: 1.5rem;
-  padding: 1rem 1rem;
+  /* padding: 1rem 1rem; */
+  padding: 0 3rem 0rem 3rem;
+  margin-left: 2rem;
 }
 .img-grid1 {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 30vh 10vh 10vh 15vh 15vh;
-  padding: 0 1.3rem;
+  padding: 0 4rem;
+  width: 90%;
 }
 .shoe {
-  width: 70%;
+  width: 60%;
   max-height: 100%;
   object-fit: cover;
   margin-left: 1rem;
@@ -219,12 +222,13 @@ li {
 }
 .shoe-para {
   text-align: center;
-  padding-right: 1rem;
+  padding-right: 2.5rem;
 }
 /* sidecontent img */
 .one-img {
   width: 100%;
-  max-height: 100%;
+  height: 100%;
+
   object-fit: cover;
 }
 .one-img-padding {
@@ -256,9 +260,27 @@ li {
 }
 
 /* hover */
-.hover-links:hover {
+/* .hover-links:hover {
   color: #1eb2ef;
+  
+  cursor: pointer;
+} */
+a {
+  display: inline-block;
+}
+.hover-links:hover {
   /* background: #fff; */
+  cursor: pointer;
+  color: #1eb2ef;
+}
+.hover-links:hover a {
+  color: #1eb2ef;
+}
+/* a:hover i {
+  color: #1eb2ef;
+} */
+.hover-links:hover i {
+  color: #1eb2ef;
 }
 
 img:hover {
@@ -267,6 +289,12 @@ img:hover {
   border-radius: 5px;
 }
 .opened-links:hover {
+  cursor: pointer;
+}
+.opened-links:hover a {
+  color: #1f45fc;
+}
+.opened-links:hover i {
   color: #1f45fc;
 }
 .border-blue:hover {
@@ -283,3 +311,5 @@ img:hover {
   color: #1eb2ef;
   cursor: pointer;
 }
+
+/* margin for storage info */
