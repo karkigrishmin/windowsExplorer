@@ -65,10 +65,10 @@ a {
 li {
   list-style: none;
 }
-.updated-item {
+/* .updated-item {
   display: grid;
   grid-template-rows: 8vh 28vh;
-}
+} */
 
 .icon-light {
   color: #fff;
@@ -99,7 +99,7 @@ li {
 .collection-item {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 8vh 8vh 8vh 5vh 26vh 28vh;
+  grid-template-rows: 8vh 8vh 8vh 6vh 6vh 6vh 6vh 8vh 8vh 29vh;
 }
 .flex-1 {
   display: flex;
