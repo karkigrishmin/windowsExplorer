@@ -86,7 +86,7 @@ li {
   /* margin: 0 auto; */
   background: #fff;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 18% 82%;
 }
 /* side menu */
 .sidebar {
@@ -95,11 +95,13 @@ li {
   padding: 0 1.3rem;
   padding-top: 0.5rem;
 }
+
 .collection-item {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 8vh 5vh 5vh 6vh 5vh 5vh 6vh 5vh 5vh 5vh 5vh 6vh 6vh 18vh;
 }
+
 .flex-1 {
   display: flex;
   justify-content: space-between;
@@ -317,4 +319,10 @@ img:hover {
 .collection-2,
 .collection-3 {
   display: none;
+}
+
+.pos {
+  position: fixed;
+  bottom: 20px;
+  left: 10px;
 }
