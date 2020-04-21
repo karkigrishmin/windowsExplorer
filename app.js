@@ -148,3 +148,38 @@ document.querySelector(".img-grid").addEventListener("click", function (e) {
   img1.setAttribute("src", a.imgSrc);
   imgDiv.appendChild(img1);
 });
+
+//for adding more info using alert box
+const alertBox = document.querySelector(".alert-box");
+alertBox.style.display = "none";
+const add = document.querySelector(".add");
+add.addEventListener("click", (e) => {
+  if (alertBox.style.display === "none") {
+    alertBox.style.display = "block";
+  } else {
+    alertBox.style.display = "none";
+  }
+});
+
+const inputBox = document.querySelector(".input-box");
+const url = document.getElementById("url");
+const title = document.getElementById("title");
+alertBox.addEventListener("click", (e) => {
+  if (e.target.value === "ADD") {
+    console.log("clicked");
+    const urlValue = url.value;
+    const titleValue = title.value;
+    const imgContainer = document.querySelector(".img-grid");
+    const div = document.createElement("div");
+    const para = document.createElement("p");
+    para.className = "shoe-para";
+    const img = document.createElement("img");
+    img.className = "shoe";
+    img.setAttribute("src", urlValue);
+    para.textContent = titleValue;
+    div.appendChild(img);
+    div.appendChild(para);
+    imgContainer.appendChild(div);
+    alertBox.style.display = "none";
+  }
+});
