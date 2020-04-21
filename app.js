@@ -180,6 +180,8 @@ alertBox.addEventListener("click", (e) => {
     div.appendChild(img);
     div.appendChild(para);
     imgContainer.appendChild(div);
+    url.value = "";
+    title.value = "";
     alertBox.style.display = "none";
   }
 });
