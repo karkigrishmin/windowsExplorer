@@ -1,105 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Document</title>
-</head>
+  <body>
+    <div class="wrapper">
+      <nav class="sidebar">
+        <ul class="collection-item">
+          <!-- 1st list that is arrow -->
+          <li class="">
+            <a href="#"
+              ><i class="fas fa-arrow-left icon-light hover-links"></i
+            ></a>
+            <a href="#" class="py"
+              ><i class="fas fa-arrow-right icon-grey hover-links"></i
+            ></a>
+          </li>
 
-<body>
-  <div class="wrapper">
-    <nav class="sidebar">
-      <ul class="collection-item">
-        <!-- 1st list that is arrow -->
-        <li class="">
-          <a href="#"><i class="fas fa-arrow-left icon-light hover-links"></i></a>
-          <a href="#" class="py"><i class="fas fa-arrow-right icon-grey hover-links"></i></a>
-        </li>
+          <!-- 2nd item,use flex-->
+          <li class="flex-1 hover-links menu-2">
+            <a href="#"
+              ><i class="fas fa-bolt icon-light"></i
+              ><span class="py-1">Quick Access</span>
+            </a>
 
-        <!-- 2nd item,use flex-->
-        <li class="flex-1 hover-links menu-2">
-          <a href="#"><i class="fas fa-bolt icon-light"></i><span class="py-1">Quick Access</span>
-          </a>
+            <a href="" class="angle-down menu-icon-2"
+              ><i class="fas fa-angle-down icon-light"></i
+            ></a>
+          </li>
 
-          <a href="" class="angle-down menu-icon-2"><i class="fas fa-angle-down icon-light"></i></a>
-        </li>
+          <!-- items of 2nd item -->
 
-        <!-- items of 2nd item -->
-        
-        <li class="list-item list hover-links collection-2">
-          <a href="#">
-            <i class="fab fa-windows icon-light"></i><span class="py-1">Windows</span></a>
-        </li>
-        <li class="list-item list hover-links collection-2">
-          <a href="#">
-            <i class="far fa-hdd icon-light"></i><span class="py-1">Software</span></a>
-        </li>
+          <li class="list-item list hover-links collection-2">
+            <a href="#">
+              <i class="fab fa-windows icon-light"></i
+              ><span class="py-1">Windows</span></a
+            >
+          </li>
+          <li class="list-item list hover-links collection-2">
+            <a href="#">
+              <i class="far fa-hdd icon-light"></i
+              ><span class="py-1">Software</span></a
+            >
+          </li>
 
-        <!-- 3rd item,use flex -->
-        <li class="flex-1 hover-links menu-3">
-          <a href="#">
-            <i class="fab fa-google-drive icon-light"></i><span class="py-1">OneDrive</span>
-          </a>
+          <!-- 3rd item,use flex -->
+          <li class="flex-1 hover-links menu-3">
+            <a href="#">
+              <i class="fab fa-google-drive icon-light"></i
+              ><span class="py-1">OneDrive</span>
+            </a>
 
-          <a href="" class="angle-down menu-icon-3">
-            <i class="fas fa-angle-down icon-light"></i>
-          </a>
-        </li>
+            <a href="" class="angle-down menu-icon-3">
+              <i class="fas fa-angle-down icon-light"></i>
+            </a>
+          </li>
 
-        <!-- items of 3rd item -->
-        <li class="list-item list hover-links collection-3">
-          <a href="#">
-            <i class="fab fa-windows icon-light"></i><span class="py-1">Windows</span></a>
-        </li>
-        <li class="list-item list hover-links collection-3">
-          <a href="#">
-            <i class="far fa-hdd icon-light"></i><span class="py-1">Software</span></a>
-        </li>
+          <!-- items of 3rd item -->
+          <li class="list-item list hover-links collection-3">
+            <a href="#">
+              <i class="fab fa-windows icon-light"></i
+              ><span class="py-1">Windows</span></a
+            >
+          </li>
+          <li class="list-item list hover-links collection-3">
+            <a href="#">
+              <i class="far fa-hdd icon-light"></i
+              ><span class="py-1">Software</span></a
+            >
+          </li>
 
-        <!--4th item,use flex  -->
-        <li class="flex-1 menu-1 hover-links">
-          <a href="#">
-            <i class="fas fa-desktop icon-light"></i><span class="py-1">This PC</span>
-          </a>
+          <!--4th item,use flex  -->
+          <li class="flex-1 menu-1 hover-links">
+            <a href="#">
+              <i class="fas fa-desktop icon-light"></i
+              ><span class="py-1">This PC</span>
+            </a>
 
-          <a href="#" class="menu-icon"><i class="fas fa-angle-up icon-light"></i></a>
-        </li>
+            <a href="#" class="menu-icon"
+              ><i class="fas fa-angle-up icon-light"></i
+            ></a>
+          </li>
 
-        <!-- items of 4th item -->
-        <li class="list-item list hover-links collection-1">
-          <a href="#">
-            <i class="fab fa-windows icon-light"></i><span class="py-1">Windows</span></a>
-        </li>
-        <li class="list-item list hover-links collection-1">
-          <a href="#">
-            <i class="far fa-hdd icon-light"></i><span class="py-1">Software</span></a>
-        </li>
-        <li class="list-item list opened-links collection-1">
-          <a href="#" class="list-blue"><i class="far fa-hdd list-blue"></i><span class="py-1">Photos</span></a>
-        </li>
+          <!-- items of 4th item -->
+          <li class="list-item list hover-links collection-1">
+            <a href="#">
+              <i class="fab fa-windows icon-light"></i
+              ><span class="py-1">Windows</span></a
+            >
+          </li>
+          <li class="list-item list hover-links collection-1">
+            <a href="#">
+              <i class="far fa-hdd icon-light"></i
+              ><span class="py-1">Software</span></a
+            >
+          </li>
+          <li class="list-item list opened-links collection-1">
+            <a href="#" class="list-blue"
+              ><i class="far fa-hdd list-blue"></i
+              ><span class="py-1">Photos</span></a
+            >
+          </li>
 
-        <li class="list-item hover-links collection-1">
-          <a href="#"><i class="far fa-hdd icon-light"></i><span class="py-1 hover-links">Movies</span></a>
-        </li>
+          <li class="list-item hover-links collection-1">
+            <a href="#"
+              ><i class="far fa-hdd icon-light"></i
+              ><span class="py-1 hover-links">Movies</span></a
+            >
+          </li>
 
-        <!-- 5th item -->
-        <li class="hover-links">
-          <a href="#">
-            <i class="fas fa-sd-card icon-light"></i><span class="py-1 hover-links">Removable Disks</span>
-          </a>
-        </li>
+          <!-- 5th item -->
+          <li class="hover-links">
+            <a href="#">
+              <i class="fas fa-sd-card icon-light"></i
+              ><span class="py-1 hover-links">Removable Disks</span>
+            </a>
+          </li>
 
-        <!-- 6th item -->
-        <ul><li class="hover-links">
-          <a href="">
-            <i class="fas fa-network-wired icon-light"></i><span class="py-1">Network</span>
-          </a>
-        </li></ul>
-        
-        <!-- <div class="pos">
+          <!-- 6th item -->
+          <ul>
+            <li class="hover-links">
+              <a href="">
+                <i class="fas fa-network-wired icon-light"></i
+                ><span class="py-1">Network</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- <div class="pos">
           <li class="flex-1 py-bottom">
             <p>Photos</p>
             <p>50GB Free of 100GB</p>
@@ -109,158 +142,240 @@
               <div class="blue-slide"></div>
             </div>
           </div> -->
-        <!-- </ul> -->
-        
-        
-      </ul>
-      <div class="pos">
-
-        <div class="flex-1 py-bottom">
-          <p>Photos</p>
-          <p class="py-1">50GB Free of 100GB</p>
+          <!-- </ul> -->
+        </ul>
+        <div class="pos">
+          <div class="flex-1 py-bottom">
+            <p>Photos</p>
+            <p class="py-1">50GB Free of 100GB</p>
+          </div>
+          <div class="container-slide">
+            <div class="blue-slide"></div>
+          </div>
         </div>
-        <div class="container-slide">
-        
-          <div class="blue-slide"></div>
-        
+      </nav>
+
+      <!-- main-layout -->
+      <div class="main-layout">
+        <div class="layout">
+          <div class="header">
+            <div class="top-head">
+              <div>
+                <a href="#" class="blue-link"
+                  ><i class="far fa-folder icon-blue"></i>
+                  <span class="py-1">StockPhotos</span>
+
+                  <i
+                    class="fas fa-times icon-grey py-3 border-rght hover-links"
+                  ></i
+                ></a>
+                <a href="#" class="icon-grey">
+                  <i class="far fa-folder icon-grey py-3 hover-links"></i
+                  ><span class="py-1 hover-links">Movies</span>
+                  <i
+                    class="fas fa-plus icon-grey py-3 border-lft hover-links"
+                  ></i>
+                </a>
+              </div>
+              <div>
+                <a href="#" class="minmax-exit">
+                  <i
+                    class="far fa-window-minimize icon-grey py-rght hover-links"
+                  ></i>
+                </a>
+                <a href="#"
+                  ><i
+                    class="far fa-window-maximize icon-grey py-rght hover-links"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i class="fas fa-times icon-grey hover-links"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="bottom-head">
+              <div class="search-bar">
+                <div>
+                  <a href="#" class="icon-grey"
+                    ><i class="fas fa-desktop icon-grey hover-links"></i>
+                    <i class="fas fa-angle-right py-1 hover-links"></i
+                    ><span class="py-1 hover-links">Photos</span
+                    ><i class="fas fa-angle-right py-1 hover-links"></i
+                    ><span class="py-1 hover-links">StockPhotos</span></a
+                  >
+                </div>
+                <a href="#"
+                  ><i class="fas fa-search icon-grey py-top hover-links"></i
+                ></a>
+              </div>
+              <div class="menu-section">
+                <div class="menu">
+                  <a
+                    href=""
+                    class="blue-link border-blue hover-links opened-links py-menu"
+                    >Home</a
+                  >
+                  <a
+                    href="#"
+                    class="icon-grey py-menu hover-links border-blue-bottom"
+                    >Share</a
+                  >
+                  <a
+                    href="#"
+                    class="icon-grey py-menu hover-links border-blue-bottom"
+                    >View</a
+                  >
+                </div>
+
+                <div class="shortcut-icons">
+                  <a href="#"
+                    ><i
+                      class="fas fa-plus-square icon-grey py-rght-2 hover-links add"
+                    ></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fas fa-copy icon-grey py-rght-2 hover-links"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fas fa-cut icon-grey py-rght-2 hover-links"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fas fa-trash icon-grey py-rght-2 hover-links"></i
+                  ></a>
+                  <a href="#"
+                    ><i class="fas fa-file-export icon-grey hover-links"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shoe collection -->
+          <div class="main-content">
+            <div class="img-grid">
+              <!-- <div class="img-bg">
+                <img
+                  src="./1580227083-guid13-1580227052.jpg"
+                  alt=""
+                  class="shoe"
+                />
+
+                <p class="shoe-para">Nike</p>
+                
+                 </div>
+            <div>
+              <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> 
+                 <p class="shoe-para">Nike</p>
+            </div>  -->
+                <!-- <div> -->
+                <!-- <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> -->
+                <!-- <p class="shoe-para">Nike</p>
+            </div>
+            <div> -->
+                <!-- <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> -->
+                <!-- <p class="shoe-para">Nike</p>
+            </div>-->
+                <!-- <div>
+                  <img
+                    src="./1580227083-guid13-1580227052.jpg"
+                    alt=""
+                    class="shoe img-blue img-opened"
+                  />
+                  <p class="shoe-para para-blue">Nike</p>
+                </div>
+                <div>
+                  <img
+                    src="./1580227083-guid13-1580227052.jpg"
+                    alt=""
+                    class="shoe"
+                  />
+                  <p class="shoe-para">Nike</p>
+                </div>
+                <div>
+                  <img
+                    src="./1580227083-guid13-1580227052.jpg"
+                    alt=""
+                    class="shoe"
+                  />
+                  <p class="shoe-para">Nike</p>
+                </div>
+                <div>
+                  <img
+                    src="./1580227083-guid13-1580227052.jpg"
+                    alt=""
+                    class="shoe"
+                  />
+                  <p class="shoe-para">Nike</p>
+                </div> -->
+              </div>
+            </div>
+            <div class="side-content">
+              <div class="img-grid1">
+                <div class="one-img-padding">
+                  <!-- <img src="./S20467-1_1.jfif" alt="" class="one-img" /> -->
+                </div>
+                <div class="img-icons">
+                  <a href=""
+                    ><i class="fas fa-image icon-grey hover-links"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fas fa-step-backward icon-grey hover-links"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fas fa-play icon-grey hover-links"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fas fa-step-forward icon-grey hover-links"></i
+                  ></a>
+                  <a href=""
+                    ><i class="fas fa-ellipsis-v icon-grey hover-links"></i
+                  ></a>
+                </div>
+
+                <div class="shoe-name">
+                  <p>Nike Shoes 5</p>
+                </div>
+
+                <div class="img-property">
+                  <div class=>
+                  <span class="icon-grey">Format :</span>
+                  <span class="py-left-propery">JPEG</span>
+                </div>
+
+                <p><span class="icon-grey">Dimension :</span> 1600x1194</p>
+                <p><span class="icon-grey">Size :</span> 128 KB</p>
+              </div>
+              <div class="img-date">
+                <p>
+                  <span class="icon-grey">Created:</span> Jan 13, 17; 4:43 PM
+                </p>
+                <p>
+                  <span class="icon-grey">Modified:</span> Jan 13, 17; 4:43 PM
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-     
-    </nav>
-
-
-    <!-- main-layout -->
-    <div class="main-layout">
-      <div class="layout">
-        <div class="header">
-          <div class="top-head">
-            <div>
-              <a href="#" class="blue-link"><i class="far fa-folder icon-blue"></i>
-                <span class="py-1">StockPhotos</span>
-
-                <i class="fas fa-times icon-grey py-3 border-rght hover-links"></i></a>
-              <a href="#" class="icon-grey">
-                <i class="far fa-folder icon-grey py-3 hover-links"></i><span class="py-1 hover-links">Movies</span>
-                <i class="fas fa-plus icon-grey py-3 border-lft hover-links"></i>
-              </a>
+      <div class="alert-box">
+        <div class="form-wrapper">
+          <form>
+            <div class="input-box">
+              <label for="url">URL</label>
+              <input type="text" id="url" />
             </div>
-            <div>
-              <a href="#" class="minmax-exit">
-                <i class="far fa-window-minimize icon-grey py-rght hover-links"></i>
-              </a>
-              <a href="#"><i class="far fa-window-maximize icon-grey py-rght hover-links"></i></a>
-              <a href="#"><i class="fas fa-times icon-grey hover-links"></i></a>
+            <div class="input-box">
+              <label for="title">Title</label>
+              <input type="text" id="title" />
             </div>
-          </div>
-
-          <div class="bottom-head">
-            <div class="search-bar">
-              <div>
-                <a href="#" class="icon-grey"><i class="fas fa-desktop icon-grey hover-links"></i>
-                  <i class="fas fa-angle-right py-1 hover-links"></i><span class="py-1 hover-links">Photos</span><i
-                    class="fas fa-angle-right py-1 hover-links"></i><span
-                    class="py-1 hover-links">StockPhotos</span></a>
-              </div>
-              <a href="#"><i class="fas fa-search icon-grey py-top hover-links"></i></a>
+            <div class="input-box btn-box">
+              <input type="button" value="ADD" class="btn" />
             </div>
-            <div class="menu-section">
-              <div class="menu">
-                <a href="" class="blue-link border-blue hover-links opened-links py-menu">Home</a>
-                <a href="#" class="icon-grey py-menu hover-links border-blue-bottom">Share</a>
-                <a href="#" class="icon-grey py-menu hover-links border-blue-bottom">View</a>
-              </div>
-
-              <div class="shortcut-icons">
-                <a href="#"><i class="fas fa-copy icon-grey py-rght-2 hover-links"></i></a>
-                <a href="#"><i class="fas fa-cut icon-grey py-rght-2 hover-links"></i></a>
-                <a href="#"><i class="fas fa-trash icon-grey py-rght-2 hover-links"></i></a>
-                <a href="#"><i class="fas fa-file-export icon-grey hover-links"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Shoe collection -->
-        <div class="main-content">
-          <div class="img-grid">
-            <!-- <div class="img-bg">
-              <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" />
-              
-              <p class="shoe-para">Nike</p> -->
-            <!-- </div>
-            <div>
-              <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> -->
-              <!-- <p class="shoe-para">Nike</p>
-            </div> --> 
-            <!-- <div> -->
-              <!-- <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> -->
-              <!-- <p class="shoe-para">Nike</p>
-            </div>
-            <div> -->
-              <!-- <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> -->
-              <!-- <p class="shoe-para">Nike</p>
-            </div>
-            <div> -->
-              <!-- <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe img-blue img-opened" /> -->
-              <!-- <p class="shoe-para para-blue">Nike</p>
-            </div>
-            <div> -->
-              <!-- <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> -->
-              <!-- <p class="shoe-para">Nike</p>
-            </div>
-            <div> -->
-              <!-- <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> -->
-              <!-- <p class="shoe-para">Nike</p>
-            </div>
-            <div> -->
-              <!-- <img src="./1580227083-guid13-1580227052.jpg" alt="" class="shoe" /> -->
-              <!-- <p class="shoe-para">Nike</p>
-            </div> -->
-          </div>
-        </div>
-        <div class="side-content">
-          <div class="img-grid1">
-            <div class="one-img-padding">
-              <!-- <img src="./S20467-1_1.jfif" alt="" class="one-img" /> -->
-            </div>
-            <div class="img-icons">
-              <a href=""><i class="fas fa-image icon-grey hover-links"></i></a>
-              <a href=""><i class="fas fa-step-backward icon-grey hover-links"></i></a>
-              <a href=""><i class="fas fa-play icon-grey hover-links"></i></a>
-              <a href=""><i class="fas fa-step-forward icon-grey hover-links"></i></a>
-              <a href=""><i class="fas fa-ellipsis-v icon-grey hover-links"></i></a>
-            </div>
-
-            <div class="shoe-name">
-              <p>Nike Shoes 5</p>
-            </div>
-
-            <div class="img-property">
-              <div class=>
-                <span class="icon-grey">Format :</span>
-                <span class="py-left-propery">JPEG</span>
-              </div>
-
-              <p><span class="icon-grey">Dimension :</span> 1600x1194</p>
-              <p><span class="icon-grey">Size :</span> 128 KB</p>
-            </div>
-            <div class="img-date">
-              <p>
-                <span class="icon-grey">Created:</span> Jan 13, 17; 4:43 PM
-              </p>
-              <p>
-                <span class="icon-grey">Modified:</span> Jan 13, 17; 4:43 PM
-              </p>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </div>
-
-
-
-  </div>
-  <script src="./app.js"></script>
-</body>
-
+    <script src="./app.js"></script>
+  </body>
 </html>
