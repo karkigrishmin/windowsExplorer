@@ -1,0 +1,1 @@
+Simple layout of window made using css and contents of layout like images are dyanamically generated and we can add more images using url & the selected images are also rendered in the side of page/layout.
